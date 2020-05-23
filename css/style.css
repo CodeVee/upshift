@@ -3,7 +3,7 @@
     --seconday-color: #333456;
     --light-color: #fff;
     --grey-color: #d3d3d3;
-    --max-width: 1280px;
+    --max-width: 1140px;
     --width: 960px;
     --font-size: 10px;
 }
@@ -51,6 +51,7 @@ p {
 
 #header {
     background-color: var(--primary-color);
+    min-width: 128rem;
 }
 
 #header #navigation {
@@ -58,20 +59,27 @@ p {
     grid-template-columns: 1fr 6fr;
 }
 
+#header #navigation img {
+    align-self: center;
+}
+
 
 #header #navigation #navbar {
-    display: grid;
+    /* display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
-    grid-gap: 1rem;
+    grid-gap: 1rem; */
+    display: flex;
+    justify-content: space-between;
     align-items: center;
 }
 
 #header #navigation #navbar .main-nav {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     font-size: 1.7rem;
     text-align: center;
+    width: 25rem;
 }
 
 #header #navigation #navbar .main-nav li {
@@ -94,25 +102,72 @@ p {
 #header #navigation #navbar .sec-nav {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    padding: 1rem;
+    padding: .7rem;
     font-size: 1.5rem;
 }
 
 #header #navigation #navbar .auth-nav {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr 2fr;
     padding: 1rem;
     font-size: 1.5rem;
     align-items: center;
+    width: 22rem;
+    grid-gap: 3.95rem;
+}
+
+#header #navigation #navbar .auth-nav li:first-of-type {
+    margin-left: 0;
 }
 
 .btn {
     display: inline-block;
     border: none;
-    padding: 1.2rem 2.5rem;
+    padding: 1.4rem 2.5rem;
     background-color: #d3d3d3;
     border-radius: 6rem;
     color: #a9a9a9;
+}
+
+#header #header-info {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    margin-top: 10rem;
+}
+
+#header #header-info .info-text h1 {
+    font-size: 5.5rem;
+}
+
+#header #header-info .info-text p {
+    margin: 1.5rem 0;
+    font-size: 1.63rem;
+}
+
+#header #header-info .info-text #form {
+    margin-top: 3rem;
+}
+
+#header #header-info .info-text #form input[type="text"] {
+    width: 25rem;
+    height: 6rem;
+    margin-right: 5rem;
+    font-size: 1.5rem;
+    border: none;
+    border-bottom: 1px solid #d4d4d4;
+    background: transparent;
+}
+
+#header #header-info .info-text #form input[type="submit"] {
+    padding: 2.5rem 5rem;
+    background-color: var(--seconday-color);
+    color: var(--light-color);
+}
+
+#header #header-info .info-icon img {
+    width: 15rem;
+    margin-left: 8rem;
+    margin-top: 4rem;
 }
 
 
