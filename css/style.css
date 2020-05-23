@@ -65,10 +65,6 @@ p {
 
 
 #header #navigation #navbar {
-    /* display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1rem;
-    grid-gap: 1rem; */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -133,6 +129,7 @@ p {
     display: grid;
     grid-template-columns: 3fr 2fr;
     margin-top: 10rem;
+    margin-bottom: 15rem;
 }
 
 #header #header-info .info-text h1 {
@@ -168,6 +165,33 @@ p {
     width: 15rem;
     margin-left: 8rem;
     margin-top: 4rem;
+}
+
+#header #header-logos {
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+    min-width: 128rem;
+    max-width: 144rem;
+    margin: auto;
+    background-color: var(--light-color);
+}
+
+#header #header-logos .logos {
+    width: 95rem;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+#header #header-logos .logos img {
+    width: 100%;
+}
+
+#header #header-logos > div:last-of-type {
+    background: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
