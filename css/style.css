@@ -42,6 +42,18 @@ p {
     overflow: hidden;
 }
 
+.h-text {
+    font-size: 1.1rem;
+}
+
+.h-text span {
+    width: 4rem;
+    display: inline-block;
+    background-color: var(--grey-color);
+    height: .17rem;
+    margin: .3rem 1rem;
+}
+
 .sec-container {
     max-width: var(--width);
     margin: 0 auto;
@@ -192,6 +204,139 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+#about-us {
+    margin: 10rem 0;
+}
+
+#about-us .about-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+#about-us .about-boxes .x-box {
+    height: 45rem;
+    position: relative;
+}
+
+#about-us .about-boxes .x-box .img-box {
+    height: inherit;
+    background: var(--primary-color);
+    width: 35rem;
+    padding: 10rem 13rem;
+}
+
+#about-us .about-boxes .x-box .img-box img {
+    width: 10rem;
+}
+
+#about-us .about-boxes .review-box {
+    background: var(--seconday-color);
+    color: var(--light-color);
+    width: 43rem;
+    padding: 3rem;
+    position: absolute;
+    margin: -16rem 0 0 5rem;
+}
+
+#about-us .about-boxes .review-box > div {
+    padding: 0 2.8rem;
+
+}
+
+#about-us .about-boxes .review-box > div:first-child {
+    border-left: 2px solid var(--primary-color);
+    font-size: 1.34rem;
+    line-height: 1.5;
+}
+
+#about-us .about-boxes .review-box > div:last-child {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 4rem;
+    margin-top: 2rem;
+}
+
+#about-us .about-boxes .review-box .rating .info {
+    display: flex;
+    font-size: 1.4rem;
+    align-items: center;
+}
+
+#about-us .about-boxes .review-box .rating .info img {
+    width: 5rem;
+    margin-right: 1rem;
+}
+
+#about-us .about-boxes .review-box .review {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+#about-us .about-boxes .review-box .review .stars i {
+    font-size: 1.4rem;
+}
+
+#about-us .about-boxes .review-box .review small {
+    font-size: 1rem;
+    color: #d3d3d3;
+}
+
+#about-us .about-texts h6 {
+    margin-top: 5rem;
+}
+
+#about-us .about-texts h2 {
+    font-size: 3.8rem;
+    margin: 1rem 0;
+}
+
+#about-us .about-texts > p {
+    font-size: 1.55rem;
+    padding-right: 12rem;
+    line-height: 1.5;
+    color: #d3d3d3;
+}
+
+#about-us .about-texts > p:last-of-type {
+    margin-bottom: 4rem;
+}
+
+#about-us .about-texts > span {
+    display: block;
+    height: .1rem;
+    background: var(--primary-color);
+    width: 36rem;
+}
+
+#about-us .about-texts > div {
+    display: flex;
+    margin-top: 4rem;
+    width: 29rem;
+    justify-content: space-between;
+}
+
+#about-us .about-texts > div img {
+    width: 6rem;
+}
+
+#about-us .about-texts > div .values {
+    font-size: 1.2rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 21rem;
+}
+
+#about-us .about-texts > div .values p:first-of-type {
+    flex-basis: 100%;
+    color: #d3d3d3;
+}
+
+#about-us .about-texts > div .values p:last-of-type {
+    font-weight: bold;
 }
 
 
