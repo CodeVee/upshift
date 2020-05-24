@@ -200,7 +200,7 @@ p {
 
 #header #header-info .info-text #form input[type="submit"] {
     padding: 2.5rem 5rem;
-    background-color: var(--seconday-color);
+    background-color: #817b9b;
     color: var(--light-color);
 }
 
@@ -331,7 +331,7 @@ p {
     font-size: 1.55rem;
     padding-right: 12rem;
     line-height: 1.5;
-    color: #d3d3d3;
+    color: #686883;
 }
 
 #about-us .about-texts .img-val .values p:first-of-type {
@@ -340,7 +340,7 @@ p {
 }
 
 #works {
-    background-color: #fbfbfc;
+    background-color: #fdfdfd;
 }
 
 #works .works-box {
@@ -351,11 +351,86 @@ p {
 }
 
 #works .works-box h2 {
-    font-size: 3rem;
+    font-size: 3.36rem;
     padding-right: 10rem;
 }
 
 #works .works-box .w-bx > p {
     font-size: 1.7rem;
     color: #686883;
+}
+
+#features {
+    background-color: #fcfcfc;
+}
+
+#features .container {
+    position: relative;
+}
+
+#features .container .img {
+    position: absolute;
+    width: 15rem;
+}
+
+#features .container .img-1 {
+    margin-top: -23rem;
+    margin-left: 20rem;
+}
+
+#features .container .img-2 {
+    margin-top: -27rem;
+    margin-left: 47rem;
+}
+
+#features .container .img-3 {
+    margin-top: -23rem;
+    margin-left: 76rem;
+}
+
+#features #features-wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 3rem;
+    height: 37rem;
+}
+
+#features .features-box {
+    border-bottom: 2px solid var(--primary-color);
+    text-align: center;
+    height: 32rem;
+}
+
+#features .features-box > * {
+    margin: 1.5rem 0;
+}
+
+#features #features-wrapper .features-box:nth-child(even) {
+    margin-top: 4rem;
+}
+
+#features #features-wrapper .features-box:nth-child(1) {
+    padding: 6rem 3.3rem;
+}
+
+#features #features-wrapper .features-box:nth-child(2) {
+    padding: 6rem 5.15rem;
+}
+
+#features #features-wrapper .features-box:nth-child(3) {
+    padding: 6rem 2rem;
+}
+
+#features #features-wrapper .features-box:nth-child(4) {
+    padding: 6rem 1.47rem;
+}
+
+#features .features-box h3 {
+    font-size: 3rem;
+}
+
+#features .features-box p {
+    font-size: 1.34rem;
+    line-height: 1.5;
+    color: #6d6d88;
 }
