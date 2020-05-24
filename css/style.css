@@ -46,6 +46,11 @@ p {
     font-size: 1.1rem;
 }
 
+.heading-text {
+    font-size: 3.5rem;
+    margin: 2rem 0;
+}
+
 .h-text span {
     width: 4rem;
     display: inline-block;
@@ -162,7 +167,7 @@ p {
 .btn {
     display: inline-block;
     border: none;
-    padding: 1.4rem 2.5rem;
+    padding: 1.4rem 2.39rem;
     background-color: #d3d3d3;
     border-radius: 6rem;
     color: #a9a9a9;
@@ -322,11 +327,6 @@ p {
     margin-top: 5rem;
 }
 
-#about-us .about-texts h2 {
-    font-size: 3.8rem;
-    margin: 1rem 0;
-}
-
 #about-us .about-texts > p {
     font-size: 1.55rem;
     padding-right: 12rem;
@@ -351,8 +351,8 @@ p {
 }
 
 #works .works-box h2 {
-    font-size: 3.36rem;
-    padding-right: 10rem;
+    padding-right: 9rem;
+    margin: 0;
 }
 
 #works .works-box .w-bx > p {
@@ -374,17 +374,17 @@ p {
 }
 
 #features .container .img-1 {
-    margin-top: -23rem;
+    margin-top: -35rem;
     margin-left: 20rem;
 }
 
 #features .container .img-2 {
-    margin-top: -27rem;
+    margin-top: -39rem;
     margin-left: 47rem;
 }
 
 #features .container .img-3 {
-    margin-top: -23rem;
+    margin-top: -35rem;
     margin-left: 76rem;
 }
 
@@ -393,6 +393,7 @@ p {
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 3rem;
     height: 37rem;
+    margin-bottom: 12rem;
 }
 
 #features .features-box {
@@ -410,11 +411,11 @@ p {
 }
 
 #features #features-wrapper .features-box:nth-child(1) {
-    padding: 6rem 3.3rem;
+    padding: 6rem 3rem;
 }
 
 #features #features-wrapper .features-box:nth-child(2) {
-    padding: 6rem 5.15rem;
+    padding: 6rem 5rem;
 }
 
 #features #features-wrapper .features-box:nth-child(3) {
@@ -422,7 +423,7 @@ p {
 }
 
 #features #features-wrapper .features-box:nth-child(4) {
-    padding: 6rem 1.47rem;
+    padding: 6rem 1.1rem;
 }
 
 #features .features-box h3 {
@@ -431,6 +432,86 @@ p {
 
 #features .features-box p {
     font-size: 1.34rem;
-    line-height: 1.5;
+    line-height: 1.55;
     color: #6d6d88;
+}
+
+#coverage {
+    background: #fbfbfb;
+}
+
+#coverage .container {
+    display: flex;
+}
+
+#coverage .placeholder {
+    height: 60rem;
+    width: 44rem;
+    background-color: var(--grey-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+#coverage .placeholder img {
+    width: 10rem;
+}
+
+#coverage .coverage-box {
+    height: 60rem;
+    width: 74rem;
+    margin-left: -8rem;
+    margin-top: 8rem;
+    background-color: var(--seconday-color);
+    color: var(--grey-color);
+    padding: 6rem 17.7rem;
+}
+
+#coverage .coverage-box h2,
+#coverage .coverage-box h5 {
+    color: var(--light-color);
+}
+
+#coverage .coverage-box > p {
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
+}
+
+#coverage .coverage-box i {
+    font-size: 1.5rem;
+}
+
+#coverage .coverage-box h5 {
+    display: inline-block;
+    font-size: 1.5rem;
+    margin-left: 2.5rem;
+}
+
+#coverage .coverage-box small {
+    display: block;
+    font-size: 1.15rem;
+    margin: 1rem 7.3rem 1rem 4.2rem;
+    line-height: 2;
+}
+
+#coverage .coverage-box small:last-of-type {
+    margin-bottom: 4rem;
+}
+
+#coverage .coverage-box  > span {
+    margin-bottom: 3rem;
+}
+
+#coverage .coverage-box .img-val {
+    margin-bottom: 3rem;
+}
+
+#coverage .coverage-box .img-val .img-canc img {
+    width: 4rem;
+}
+
+#coverage .coverage-box .img-val .values p:first-of-type {
+    flex-basis: 100%;
+    color: #d3d3d3;
 }
