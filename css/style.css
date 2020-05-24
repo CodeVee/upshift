@@ -42,6 +42,28 @@ p {
     overflow: hidden;
 }
 
+.container-sm {
+    max-width: var(--width);
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.btn {
+    display: inline-block;
+    border: none;
+    padding: 1.4rem 2.39rem;
+    background-color: #d3d3d3;
+    border-radius: 6rem;
+    color: #a9a9a9;
+    cursor: pointer;
+}
+
+.btn-block {
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
 .h-text {
     font-size: 1.1rem;
 }
@@ -162,15 +184,6 @@ p {
 
 #header #navigation #navbar .auth-nav li:first-of-type {
     margin-left: 0;
-}
-
-.btn {
-    display: inline-block;
-    border: none;
-    padding: 1.4rem 2.39rem;
-    background-color: #d3d3d3;
-    border-radius: 6rem;
-    color: #a9a9a9;
 }
 
 #header #header-info {
@@ -445,7 +458,7 @@ p {
 }
 
 #coverage .placeholder {
-    height: 60rem;
+    height: 68rem;
     width: 44rem;
     background-color: var(--grey-color);
     display: flex;
@@ -459,13 +472,14 @@ p {
 }
 
 #coverage .coverage-box {
-    height: 60rem;
-    width: 74rem;
-    margin-left: -8rem;
+    height: 68rem;
+    width: 66rem;
+    margin-left: 36rem;
     margin-top: 8rem;
     background-color: var(--seconday-color);
     color: var(--grey-color);
-    padding: 6rem 17.7rem;
+    padding: 12rem 13rem;
+    position: absolute;
 }
 
 #coverage .coverage-box h2,
@@ -490,17 +504,18 @@ p {
 
 #coverage .coverage-box small {
     display: block;
-    font-size: 1.15rem;
-    margin: 1rem 7.3rem 1rem 4.2rem;
+    font-size: 1.39rem;
+    margin: 1rem 4rem 1rem 4.2rem;
     line-height: 2;
 }
 
 #coverage .coverage-box small:last-of-type {
-    margin-bottom: 4rem;
+    margin-bottom: 6rem;
 }
 
 #coverage .coverage-box  > span {
     margin-bottom: 3rem;
+    background: #909090;
 }
 
 #coverage .coverage-box .img-val {
@@ -511,7 +526,97 @@ p {
     width: 4rem;
 }
 
+#coverage .coverage-box .img-val .values p {
+    padding: 0;
+}
+
 #coverage .coverage-box .img-val .values p:first-of-type {
     flex-basis: 100%;
     color: #d3d3d3;
+}
+
+#coverage .coverage-box .img-val .values i ,
+#coverage .coverage-box .img-val .values p:last-of-type {
+    color: var(--light-color);
+}
+
+#pricing {
+    margin-top: 25rem;
+    text-align: center;
+}
+
+#pricing .container-sm > p {
+    font-size: 1.65rem;
+    margin: 0 10.57rem;
+    line-height: 2;
+}
+
+#pricing .pricing-box {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 7.5rem;
+    margin-top: 10rem;
+    height: 50rem;
+}
+
+#pricing .pricing-box .price-box {
+    padding: 4.18rem;
+}
+
+#pricing .pricing-box .price-box h3 {
+    font-size: 2rem;
+}
+
+#pricing .pricing-box .price-box p,
+#pricing .pricing-box .price-box div a {
+    font-size: 1.2rem;
+    line-height: 2;
+}
+
+#pricing .pricing-box .price-box p span {
+    font-size: 3rem;
+}
+
+#pricing .pricing-box .price-box > span {
+    width: 100%;
+    background: var(--grey-color);
+}
+
+#pricing .pricing-box .price-box .btn {
+    margin: 2rem 0;
+    background: #817b9b;
+    color: var(--primary-color);
+}
+
+#pricing .pricing-box .price-box div {
+    display: flex;
+    justify-content: center;
+}
+
+#pricing .pricing-box .price-box div a {
+    font-weight: bold;
+    color: #333;
+}
+
+#pricing .pricing-box > div:nth-child(odd) {
+    margin-top: auto;
+    border: 1px solid #817b9b;
+    height: 45rem;
+}
+
+#pricing .pricing-box > div:nth-child(even) {
+    height: inherit;
+    border-top: 2px solid #817b9b;
+    -webkit-box-shadow: 0px 10px 20px 10px rgba(211,211,211,1);
+    -moz-box-shadow: 0px 10px 20px 10px rgba(211,211,211,1);
+    box-shadow: 0px 10px 20px 10px rgba(211,211,211,1);
+}
+
+#pricing .pricing-box > div:nth-child(even) h6 {
+    font-size: .9rem;
+    margin: 1.8rem 0;
+}
+
+#pricing .pricing-box > div:last-child p:last-of-type {
+    margin: 0 -.6rem;
 }
