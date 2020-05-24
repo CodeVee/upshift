@@ -45,7 +45,6 @@ p {
 .container-sm {
     max-width: var(--width);
     margin: 0 auto;
-    overflow: hidden;
 }
 
 .btn {
@@ -473,12 +472,12 @@ p {
 
 #coverage .coverage-box {
     height: 68rem;
-    width: 66rem;
+    width: 74rem;
     margin-left: 36rem;
     margin-top: 8rem;
     background-color: var(--seconday-color);
     color: var(--grey-color);
-    padding: 12rem 13rem;
+    padding: 12rem 17rem;
     position: absolute;
 }
 
@@ -619,4 +618,80 @@ p {
 
 #pricing .pricing-box > div:last-child p:last-of-type {
     margin: 0 -.6rem;
+}
+
+#car {
+    background: var(--primary-color);
+    margin-top: 15rem;
+}
+
+
+
+#car .car-info .car-info-main {
+    width: 40rem;
+    padding: 15rem 0;
+}
+
+#car .car-info .car-info-main p {
+    font-size: 1.4rem;
+    line-height: 2;
+    padding-right: 8.3rem;
+}
+
+#car .car-join {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--primary-color);
+}
+
+#car .car-join .heading-text {
+    width: 50rem;
+    margin: 10rem 0;
+}
+
+#car .car-join .btn {
+    padding: 1.5rem 8rem;
+    height: 5rem;
+    background: #817b9b;
+    color: var(--primary-color);
+}
+
+#car .container {
+    position: relative;
+    overflow: visible;
+}
+
+#car .car-box {
+    position: absolute;
+    background: #a49fb6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+#car .car-box img {
+    width: 10rem;
+}
+
+#car .box-1 {
+    height: 45rem;
+    width: 47rem;
+    margin-left: 65rem;
+    margin-top: -8rem;
+}
+
+#car .box-2 {
+    height: 29.5rem;
+    width: 23rem;
+    margin-left: 65rem;
+    margin-top: 40rem;
+}
+
+#car .box-3 {
+    height: 23rem;
+    width: 27rem;
+    margin-left: 91rem;
+    margin-top: 40rem;
 }
