@@ -380,35 +380,35 @@ p {
     color: #686883;
 }
 
-#features {
+#works .features {
     background-color: #fcfcfc;
 }
 
-#features .container {
+#works .features {
     position: relative;
 }
 
-#features .container .img {
+#works .features .img {
     position: absolute;
     width: 15rem;
 }
 
-#features .container .img-1 {
+#works .features .img-1 {
     margin-top: -35rem;
     margin-left: 20rem;
 }
 
-#features .container .img-2 {
+#works .features .img-2 {
     margin-top: -39rem;
     margin-left: 47rem;
 }
 
-#features .container .img-3 {
+#works .features .img-3 {
     margin-top: -35rem;
     margin-left: 76rem;
 }
 
-#features #features-wrapper {
+#works .features #features-wrapper {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 3rem;
@@ -416,41 +416,41 @@ p {
     margin-bottom: 12rem;
 }
 
-#features .features-box {
+#works .features .features-box {
     border-bottom: 2px solid var(--primary-color);
     text-align: center;
     height: 32rem;
 }
 
-#features .features-box > * {
+#works .features .features-box > * {
     margin: 1.5rem 0;
 }
 
-#features #features-wrapper .features-box:nth-child(even) {
+#works .features #features-wrapper .features-box:nth-child(even) {
     margin-top: 4rem;
 }
 
-#features #features-wrapper .features-box:nth-child(1) {
+#works .features #features-wrapper .features-box:nth-child(1) {
     padding: 6rem 3rem;
 }
 
-#features #features-wrapper .features-box:nth-child(2) {
+#works .features #features-wrapper .features-box:nth-child(2) {
     padding: 6rem 5rem;
 }
 
-#features #features-wrapper .features-box:nth-child(3) {
+#works .features #features-wrapper .features-box:nth-child(3) {
     padding: 6rem 2rem;
 }
 
-#features #features-wrapper .features-box:nth-child(4) {
+#works .features #features-wrapper .features-box:nth-child(4) {
     padding: 6rem 1.1rem;
 }
 
-#features .features-box h3 {
+#works .features .features-box h3 {
     font-size: 3rem;
 }
 
-#features .features-box p {
+#works .features .features-box p {
     font-size: 1.34rem;
     line-height: 1.55;
     color: #6d6d88;
