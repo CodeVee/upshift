@@ -22,6 +22,13 @@ body, html {
     line-height: 1.3;
 }
 
+input[type="text"],
+input[type="email"],
+input[type="submit"] {
+    -webkit-appearance: none;
+    border-radius: 0;
+}
+
 ul {
     list-style: none;
 }
@@ -219,6 +226,7 @@ p {
     padding: 2.5rem 5rem;
     background-color: #817b9b;
     color: var(--light-color);
+    border-radius: 6rem;
 }
 
 #header #header-info .info-icon img {
@@ -574,6 +582,7 @@ p {
 
 #pricing .pricing-box .price-box p span {
     font-size: 3rem;
+    font-weight: bold;
 }
 
 #pricing .pricing-box .price-box > span {
@@ -642,7 +651,7 @@ p {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border-bottom: 1px solid var(--primary-color);
+    border-bottom: 1px solid var(--grey-color);
 }
 
 #car .car-join .heading-text {
@@ -664,7 +673,7 @@ p {
 
 #car .car-box {
     position: absolute;
-    background: #a49fb6;
+    background: #d7d6df;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -694,4 +703,77 @@ p {
     width: 27rem;
     margin-left: 91rem;
     margin-top: 40rem;
+}
+
+#footer {
+    background-color: var(--primary-color);
+}
+
+#footer .footer-nav {
+    padding: 5rem 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) 2fr;
+}
+
+#footer .footer-nav .footer-nav-items {
+    font-size: 1.5rem;
+    line-height: 2;
+    position: relative;
+}
+
+#footer .footer-nav .footer-nav-items h6 {
+    font-size: 1.2rem;
+    line-height: 4;
+}
+
+#footer .footer-nav .footer-nav-items small {
+    font-size: 1.44rem;
+}
+
+#footer .footer-nav .footer-nav-items input[type="email"] {
+    margin-top: 1.5rem;
+    background-color: var(--grey-color);
+    width: 38rem;
+    border: none;
+    padding: 2rem 4rem;
+    border-radius: 3rem;
+    color:  var(--seconday-color);
+    outline: none;
+}
+
+#footer .footer-nav .footer-nav-items a i {
+    background: #817b9b;
+    padding: 1rem;
+    border-radius: 50%;
+    transform: rotate(-30deg);
+    position: absolute;
+    margin-top: 2.3rem;
+    margin-left: -4rem;
+    color: var(--light-color);
+    font-size: 1.5rem;
+    
+}
+
+#footer .footer-logos {
+    display: grid;
+    grid-template-columns: 1fr repeat(2, 2fr);
+    padding-bottom: 5rem;
+    
+}
+
+#footer .footer-logos small {
+    font-size: 1.3rem;
+    align-self: center;
+}
+
+#footer .footer-logos div a {
+    background-color: var(--grey-color);
+    border-radius: 50%;
+    padding: 1rem 1.2rem;
+    display: inline-block;
+    margin: 0 .5rem;
+}
+
+#footer .footer-logos div a img {
+    width: 1.7rem;
 }
