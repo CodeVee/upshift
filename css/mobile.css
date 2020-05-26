@@ -1,0 +1,241 @@
+.container {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 2rem;
+    overflow: hidden;
+}
+
+.container-sm {
+    max-width: var(--width);
+    margin: 0 auto;
+}
+
+.btn-block {
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+.h-text {
+    font-size: 1.1rem;
+}
+
+.heading-text {
+    font-size: 3.5rem;
+    margin: 2rem 0;
+}
+
+.h-text span {
+    width: 4rem;
+    display: inline-block;
+    background-color: var(--grey-color);
+    height: .17rem;
+    margin: .3rem 1rem;
+}
+
+.line {
+    display: block;
+    height: .1rem;
+    background: var(--primary-color);
+    width: 36rem;
+    margin: 3rem 0;
+}
+
+.img-val {
+    display: flex;
+    width: 29rem;
+    justify-content: space-between;
+}
+
+.img-val img {
+    width: 6rem;
+}
+
+.img-val .values {
+    font-size: 1.2rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 22rem;
+    align-content: center;
+}
+
+.img-val .values .bold {
+    font-weight: bold;
+    margin-right: 1rem;
+}
+
+.sec-container {
+    max-width: var(--width);
+    margin: 0 auto;
+    padding: 0 1rem;
+    overflow: hidden;
+}
+
+
+#header {
+    min-width: 100%;
+}
+
+#header #navigation {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 1rem 0;
+}
+
+#header #navigation img {
+    align-self: center;
+}
+
+#header #navigation label {
+    display: block;
+}
+
+#header #navigation label i {
+    font-size: 4rem;
+}
+
+
+#header #navigation #navbar {
+    display: flex;
+    flex-direction: column;
+    width: 93%;
+    padding: 1rem;
+    position: absolute;
+    margin-top: 5rem;
+    background-color: var(--seconday-color);
+    opacity: 0.9;
+    transition: transform 1.5s ease-in-out ;
+    transform: translateX(-100rem);
+}
+
+#header #navigation #navbar .main-nav,
+#header #navigation #navbar .sec-nav,
+#header #navigation #navbar .auth-nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 1.4rem;
+    text-align: center;
+    width: inherit;
+}
+
+#header #navigation #navbar .main-nav li,
+#header #navigation #navbar .sec-nav li,
+#header #navigation #navbar .auth-nav li {
+    padding: 1rem 0;
+}
+
+#header #navigation #navbar .main-nav li a,
+#header #navigation #navbar .sec-nav li a,
+#header #navigation #navbar .auth-nav li a {
+    color: var(--primary-color);
+}
+
+#header #navigation #navbar .main-nav li:first-of-type a {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+#header #navigation #navbar .main-nav li a i {
+    display: none;
+}
+
+#header #navigation #navbar .sec-nav {
+    grid-template-columns: 1fr;
+    padding: 0;
+}
+
+#header #navigation #navbar .auth-nav {
+    grid-template-columns: 1fr;
+    padding: 0;
+    grid-gap: 0;
+    align-items: initial;
+}
+
+#header #navigation #navbar .auth-nav li .btn {
+    display: inline-block;
+    border: none;
+    padding: 0;
+    background-color: var(--seconday-color);
+    border-radius: 0;
+    color: var(--primary-color);
+    width: inherit;
+}
+
+#header #navigation #hamburger:checked + #navbar {
+    transform: translateX(0);
+
+}
+
+#header #header-info {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    margin-top: 10rem;
+    margin-bottom: 15rem;
+    color: #6d6d88;
+}
+
+#header #header-info .info-text h1 {
+    font-size: 5.5rem;
+    color: #464658;
+}
+
+#header #header-info .info-text p {
+    margin: 1.5rem 0;
+    font-size: 1.63rem;
+}
+
+#header #header-info .info-text #form {
+    margin-top: 3rem;
+}
+
+#header #header-info .info-text #form input[type="text"] {
+    width: 25rem;
+    height: 6rem;
+    margin-right: 5rem;
+    font-size: 1.5rem;
+    border: none;
+    border-bottom: 1px solid #d4d4d4;
+    background: transparent;
+}
+
+#header #header-info .info-text #form input[type="submit"] {
+    padding: 2.5rem 5rem;
+    background-color: #817b9b;
+    color: var(--light-color);
+    border-radius: 6rem;
+}
+
+#header #header-info .info-icon img {
+    width: 15rem;
+    margin-left: 8rem;
+    margin-top: 4rem;
+}
+
+#header #header-logos {
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+    min-width: 128rem;
+    max-width: 144rem;
+    margin: auto;
+    background-color: var(--light-color);
+}
+
+#header #header-logos .logos {
+    width: 95rem;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+#header #header-logos .logos img {
+    width: 100%;
+}
+
+#header #header-logos > div:last-of-type {
+    background: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

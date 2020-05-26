@@ -139,6 +139,10 @@ p {
     align-self: center;
 }
 
+#header #navigation input,
+#header #navigation label {
+    display: none;
+}
 
 #header #navigation #navbar {
     display: flex;
