@@ -135,7 +135,7 @@ p {
     grid-template-columns: 1fr 6fr;
 }
 
-#header #navigation img {
+#header #navigation a {
     align-self: center;
 }
 
