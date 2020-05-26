@@ -35,7 +35,7 @@ ul {
 
 a {
     text-decoration: none;
-    color: #d3d3d3;
+    color: #6d6d88;
 }
 
 p {
@@ -159,7 +159,7 @@ p {
 }
 
 #header #navigation #navbar .main-nav li:first-of-type a {
-    color: #333;
+    color: #6d6d88;
 }
 
 #header #navigation #navbar .main-nav li a i {
@@ -197,10 +197,12 @@ p {
     grid-template-columns: 3fr 2fr;
     margin-top: 10rem;
     margin-bottom: 15rem;
+    color: #6d6d88;
 }
 
 #header #header-info .info-text h1 {
     font-size: 5.5rem;
+    color: #464658;
 }
 
 #header #header-info .info-text p {
@@ -347,20 +349,35 @@ p {
     margin-top: 5rem;
 }
 
+#about-us .about-texts {
+    color: #6d6d88;
+}
+
+#about-us .about-texts h2, 
+#about-us .about-texts .values p:nth-child(2) {
+    color: #464658;
+}
+
 #about-us .about-texts > p {
     font-size: 1.55rem;
     padding-right: 12rem;
     line-height: 1.5;
-    color: #686883;
+    color: #6d6d88;
 }
 
 #about-us .about-texts .img-val .values p:first-of-type {
     flex-basis: 100%;
-    color: #d3d3d3;
 }
 
 #works {
     background-color: #fdfdfd;
+    color: #6d6d88;
+}
+
+#works h2,
+#works h3,
+#works .values p {
+    color: #464658;
 }
 
 #works .works-box {
@@ -377,7 +394,6 @@ p {
 
 #works .works-box .w-bx > p {
     font-size: 1.7rem;
-    color: #686883;
 }
 
 #works .features {
@@ -453,7 +469,6 @@ p {
 #works .features .features-box p {
     font-size: 1.34rem;
     line-height: 1.55;
-    color: #6d6d88;
 }
 
 #coverage {
@@ -550,6 +565,12 @@ p {
 #pricing {
     margin-top: 25rem;
     text-align: center;
+    color: #6d6d88;
+}
+
+#pricing h2,
+#pricing h3 {
+    color: #464658;
 }
 
 #pricing .container-sm > p {
@@ -632,6 +653,11 @@ p {
 #car {
     background: var(--primary-color);
     margin-top: 15rem;
+    color: #6d6d88;
+}
+
+#car h2 {
+    color: #464658;
 }
 
 
@@ -707,6 +733,11 @@ p {
 
 #footer {
     background-color: var(--primary-color);
+    color: #6d6d88;
+}
+
+#footer h6 {
+    color: #464658;
 }
 
 #footer .footer-nav {
