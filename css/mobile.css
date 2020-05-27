@@ -1,28 +1,7 @@
-.container {
-    max-width: var(--max-width);
-    margin: 0 auto;
-    padding: 0 2rem;
-    overflow: hidden;
-}
-
-.container-sm {
-    max-width: var(--width);
-    margin: 0 auto;
-}
-
-.btn-block {
-    display: block;
-    width: 100%;
-    text-align: center;
-}
-
-.h-text {
-    font-size: 1.1rem;
-}
 
 .heading-text {
-    font-size: 3.5rem;
-    margin: 2rem 0;
+    font-size: 2.5rem;
+    margin: 1rem 0;
 }
 
 .h-text span {
@@ -34,43 +13,8 @@
 }
 
 .line {
-    display: block;
-    height: .1rem;
-    background: var(--primary-color);
-    width: 36rem;
-    margin: 3rem 0;
+    width: 100%;
 }
-
-.img-val {
-    display: flex;
-    width: 29rem;
-    justify-content: space-between;
-}
-
-.img-val img {
-    width: 6rem;
-}
-
-.img-val .values {
-    font-size: 1.2rem;
-    display: flex;
-    flex-wrap: wrap;
-    flex-basis: 22rem;
-    align-content: center;
-}
-
-.img-val .values .bold {
-    font-weight: bold;
-    margin-right: 1rem;
-}
-
-.sec-container {
-    max-width: var(--width);
-    margin: 0 auto;
-    padding: 0 1rem;
-    overflow: hidden;
-}
-
 
 #header {
     min-width: 100%;
@@ -217,6 +161,49 @@
     font-size: 1.6rem;
 }
 
+#about-us {
+    margin: 7rem 0;
+}
+
+#about-us .about-wrapper {
+    grid-template-columns: 1fr;
+}
+
+#about-us .about-boxes {
+    order: 1;
+}
+
+#about-us .about-boxes .x-box {
+    display: none;
+}
+
+
+#about-us .about-boxes .review-box {
+    width: 50rem;
+    position: relative;
+    margin: 5rem auto;
+}
+
+
+
+#about-us .about-texts h6,
+#works  h6 {
+    margin-top: 0;
+}
+
+#about-us .about-texts h6,
+#about-us .about-texts h2 {
+    text-align: center;
+}
+
+#about-us .about-texts > p {
+    padding: 0 6rem;
+}
+
+#about-us .about-texts .img-val {
+    margin: 0 auto;
+}
+
 
 @media screen and (max-width: 500px) {
     #header #header-info {
@@ -227,5 +214,49 @@
     #header #header-info .info-icon,
     #header #header-logos {
         display: none;
+    }
+
+    #about-us .about-boxes .review-box {
+        width: 95%;
+        padding: 1rem;
+        margin: 2rem auto;
+    }
+
+    #about-us .about-boxes .review-box > div {
+        padding: 0 1.35rem;
+    }
+    
+    #about-us .about-boxes .review-box > div:first-child {
+        border-left: 0;
+        font-size: 1.3rem;
+    }
+    
+    #about-us .about-boxes .review-box > div:last-child {
+        grid-gap: 2rem;
+    }
+    
+    #about-us .about-boxes .review-box .rating .info {
+        font-size: 1.3rem;
+    }
+    
+    #about-us .about-boxes .review-box .rating .info img {
+        width: 4rem;
+    }
+    
+    #about-us .about-boxes .review-box .review .stars i {
+        font-size: 1.3rem;
+    }
+
+    #about-us .about-texts h6,
+    #about-us .about-texts h2 {
+        text-align: left;
+    }
+
+    #about-us .about-texts > p {
+        padding: 0;
+    }
+
+    #about-us .about-texts .img-val {
+        margin: 0;
     }
 }
