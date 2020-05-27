@@ -664,8 +664,6 @@ p {
     color: #464658;
 }
 
-
-
 #car .car-info .car-info-main {
     width: 40rem;
     padding: 15rem 0;
@@ -675,6 +673,11 @@ p {
     font-size: 1.4rem;
     line-height: 2;
     padding-right: 8.3rem;
+}
+
+#car .car-info .car-info-main > p span {
+    width: 1rem;
+    display: inline-block;
 }
 
 #car .car-join {
@@ -768,7 +771,7 @@ p {
 #footer .footer-nav .footer-nav-items input[type="email"] {
     margin-top: 1.5rem;
     background-color: var(--grey-color);
-    width: 38rem;
+    width: 37.9rem;
     border: none;
     padding: 2rem 4rem;
     border-radius: 3rem;

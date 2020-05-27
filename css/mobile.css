@@ -351,13 +351,51 @@
     grid-column: 1 / span 2;
 }
 
-#pricing .pricing-box > div:nth-child(even) h6 {
-    font-size: .9rem;
-    margin: 1.8rem 0;
+#car {
+    margin-top: 10rem;
 }
 
-#pricing .pricing-box > div:last-child p:last-of-type {
-    margin: 0 -.6rem;
+#car .car-info .car-info-main {
+    width: auto;
+    padding: 3rem;
+}
+
+#car .car-info .car-info-main h2,
+#car .car-info .car-info-main h6 {
+    text-align: center;
+}
+
+#car .car-info .car-info-main p {
+    padding-right: 0;
+}
+
+#car .car-info .car-info-main > p span {
+    width: 0;
+    display: inline-block;
+}
+
+#car .car-info .car-info-main p:last-child {
+    margin-top: -1rem;
+}
+
+#car .car-join {
+    flex-direction: column;
+}
+
+#car .car-join .heading-text {
+    width: auto;
+    margin: 1rem 0;
+    font-size: 1.7rem;
+}
+
+#car .car-join .btn {
+    padding: 1rem 10rem;
+    height: 4rem;
+    margin-bottom: 2rem;
+}
+
+#car .car-box {
+    display: none;
 }
 
 
@@ -483,5 +521,27 @@
     #pricing .pricing-box > div:nth-child(even) {
         order: 0;
         grid-column: 1;
+    }
+
+    #car {
+        margin-top: 5rem;
+    }
+    
+    #car .car-info .car-info-main {
+        padding: 3rem 1rem;
+    }
+    
+    #car .car-info .car-info-main h2,
+    #car .car-info .car-info-main h6 {
+        text-align: left;
+    }
+
+    #car .car-join {
+        padding: 1rem;
+    }
+
+    #car .car-join .btn {
+        padding: 1rem 8rem;
+        margin-bottom: 1rem;
     }
 }
