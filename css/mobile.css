@@ -204,6 +204,88 @@
     margin: 0 auto;
 }
 
+#works .h-text {
+    text-align: center;
+}
+
+#works .works-box {
+    grid-template-columns: 1fr;
+    grid-gap: 2rem;
+    margin: 1rem 0;
+}
+
+#works .works-box h2 {
+    padding-right: 0;
+}
+
+#works .works-box .w-bx {
+    display: flex;
+    justify-content: center;
+}
+
+#works .works-box .w-bx > p {
+    font-size: 1.5rem;
+    flex-basis: 25rem;
+    margin-right: 3rem;
+}
+
+#works .works-box .w-bx > span {
+    display: none;
+}
+
+#works .works-box .w-bx .img-val .img-canc {
+    align-self: center;
+}
+
+#works .works-box .w-bx .img-val .img-canc img {
+    width: 4rem;
+}
+
+#works .works-box .w-bx .img-val {
+    justify-content: space-evenly;
+}
+
+#works .features .img {
+    display: none;
+}
+
+#works .features #features-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+    height: auto;
+    margin-bottom: 10rem;
+}
+
+#works .features .features-box {
+    border-bottom: 0;
+    height: auto;
+}
+
+#works .features .features-box > * {
+    margin: 1rem 0;
+}
+
+#works .features #features-wrapper .features-box:nth-child(even) {
+    margin-top: 0;
+}
+
+#works .features #features-wrapper .features-box:nth-child(1),
+#works .features #features-wrapper .features-box:nth-child(2),
+#works .features #features-wrapper .features-box:nth-child(3),
+#works .features #features-wrapper .features-box:nth-child(4) {
+    padding: 2rem;
+}
+
+
+#works .features .features-box h3 {
+    font-size: 2rem;
+}
+
+#works .features .features-box p {
+    font-size: 1.2rem;
+    line-height: 2;
+}
+
 
 @media screen and (max-width: 500px) {
     #header #header-info {
@@ -258,5 +340,41 @@
 
     #about-us .about-texts .img-val {
         margin: 0;
+    }
+
+    #works .works-box .w-bx {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #works .works-box .w-bx > p {
+        flex-basis: 0;
+        margin-right: 0;
+    }
+    
+    #works .works-box .w-bx > span {
+        display: block;
+        margin: 2rem 0;
+    }
+    
+    #works .works-box .w-bx .img-val .img-canc {
+        align-self: center;
+    }
+    
+    #works .works-box .w-bx .img-val .img-canc img {
+        width: 4rem;
+    }
+    
+    #works .works-box .w-bx .img-val {
+        justify-content: space-between;
+        margin-bottom: 1rem;
+    }
+
+    #works .features #features-wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    #works .features .features-box {
+        border-bottom: 2px solid var(--primary-color);
     }
 }
