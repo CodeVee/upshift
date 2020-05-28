@@ -34,7 +34,7 @@
 #header #navigation #navbar {
     display: flex;
     flex-direction: column;
-    width: 93%;
+    width: 100%;
     padding: 1rem;
     position: absolute;
     margin-top: 5rem;
@@ -99,7 +99,7 @@
 }
 
 #header #navigation #hamburger:checked + #navbar {
-    transform: translateX(0);
+    transform: translateX(-2rem);
 
 }
 
