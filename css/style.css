@@ -188,12 +188,18 @@ p {
     padding: 1rem;
     font-size: 1.5rem;
     align-items: center;
-    width: 22rem;
+    width: 25rem;
     grid-gap: 3.95rem;
 }
 
 #header #navigation #navbar .auth-nav li:first-of-type {
     margin-left: 0;
+}
+
+#header #navigation #navbar .auth-nav .btn {
+    padding: 1.5rem 3rem;
+    color: #6d6d88;
+    background-color: #ededed;
 }
 
 #header #header-info {
